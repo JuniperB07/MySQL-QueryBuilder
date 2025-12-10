@@ -69,9 +69,10 @@
             // 
             lblServerDatabase.AutoSize = true;
             lblServerDatabase.Dock = DockStyle.Left;
+            lblServerDatabase.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblServerDatabase.Location = new Point(3, 0);
             lblServerDatabase.Name = "lblServerDatabase";
-            lblServerDatabase.Size = new Size(72, 40);
+            lblServerDatabase.Size = new Size(70, 40);
             lblServerDatabase.TabIndex = 0;
             lblServerDatabase.Text = "label1";
             lblServerDatabase.TextAlign = ContentAlignment.MiddleLeft;
@@ -117,7 +118,7 @@
             btnExecute.Name = "btnExecute";
             btnExecute.Size = new Size(208, 42);
             btnExecute.TabIndex = 1;
-            btnExecute.Text = "EXECUTE (Ent)";
+            btnExecute.Text = "EXECUTE (F5)";
             btnExecute.UseVisualStyleBackColor = false;
             btnExecute.Click += btnExecute_Click;
             // 

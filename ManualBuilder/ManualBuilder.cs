@@ -27,7 +27,7 @@ namespace MySQL_QueryBuilder.ManualBuilder
 
         private void ManualBuilder_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Escape)
                 btnClear.PerformClick();
             else if (e.KeyCode == Keys.F5)
                 btnExecute.PerformClick();
