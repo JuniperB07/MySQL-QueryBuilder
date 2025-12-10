@@ -79,7 +79,11 @@ namespace MySQL_QueryBuilder
             Forms.SetEnabled(ControlHelper<Button>.Extract(this, "btn"), false);
 
             QB.DBC.CloseConnection();
-            QB.DBC.DisposeAsync();
+            try
+            {
+                QB.DBC.DisposeAsync();
+            }
+            catch { }
 
             QB.DBC = new DBConnect(QB.ConnSTR);
             QB.DBC.Open(out bool stat);
@@ -101,7 +105,11 @@ namespace MySQL_QueryBuilder
         private void mnuDisconnect_Click(object sender, EventArgs e)
         {
             QB.DBC.CloseConnection();
-            QB.DBC.DisposeAsync();
+            try
+            {
+                QB.DBC.DisposeAsync();
+            }
+            catch { }
 
             QB.ConnSTR = "";
             QB.ConnStatus = false;
