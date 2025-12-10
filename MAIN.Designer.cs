@@ -92,6 +92,7 @@
             mnuRefreshConnection.ShortcutKeys = Keys.F5;
             mnuRefreshConnection.Size = new Size(298, 26);
             mnuRefreshConnection.Text = "Refresh Connection";
+            mnuRefreshConnection.Click += mnuRefreshConnection_Click;
             // 
             // mnuDisconnect
             // 
@@ -99,6 +100,7 @@
             mnuDisconnect.ShortcutKeys = Keys.Control | Keys.X;
             mnuDisconnect.Size = new Size(248, 26);
             mnuDisconnect.Text = "Disconnect";
+            mnuDisconnect.Click += mnuDisconnect_Click;
             // 
             // mnuAbout
             // 
