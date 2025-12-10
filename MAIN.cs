@@ -118,5 +118,13 @@ namespace MySQL_QueryBuilder
             lblConnectionStatus.Text = "DISCONNECTED";
             Forms.SetEnabled(ControlHelper<Button>.Extract(this, "btn"), false);
         }
+
+        private void btnManualBuilder_Click(object sender, EventArgs e)
+        {
+            Hide();
+            ManualBuilder.ManualBuilder MB = new ManualBuilder.ManualBuilder();
+            MB.ShowDialog();
+            Show();
+        }
     }
 }

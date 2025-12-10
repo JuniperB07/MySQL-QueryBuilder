@@ -221,6 +221,7 @@
             btnManualBuilder.TabIndex = 1;
             btnManualBuilder.Text = "MANUAL BUILDER";
             btnManualBuilder.UseVisualStyleBackColor = false;
+            btnManualBuilder.Click += btnManualBuilder_Click;
             // 
             // btnExpressBuilder
             // 

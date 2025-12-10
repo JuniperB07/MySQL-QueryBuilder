@@ -75,6 +75,8 @@ namespace MySQL_QueryBuilder.Server
 
                 MessageBox.Show("Connection successful!", "MySQL QueryBuilder", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 QB.ConnSTR = connSTR;
+                QB.Database = newCSM.Database;
+                QB.Server = newCSM.Server;
                 Close();
             }
             catch(Exception ex)
